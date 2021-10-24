@@ -26,7 +26,6 @@ try:
 
     titulo_site = soup.title.string
     titulo_tabela = soup.find("caption").string
-    bichos_horario = soup.find_all(string=["PTM", "PT", "PTV", "FED", "COR"], limit=5)
 
     bichos_manha = soup.select("tbody tr > td:nth-child(2)", limit=5)
     bichos_tarde = soup.select("tbody tr > td:nth-child(3)", limit=5)
